@@ -1,0 +1,46 @@
+git --version (verifica versão instalada do git)
+git config --global user.name "ediomar.nogueira" (define o nome do usuário do git)
+git config --global user.email "ediomar.nogueira@qualityti.net"
+git config --global core.editor "Netbeans" (nome do editor usado)
+git config user.name (retorna nome do usuário)
+git config --list (lista todas configurações)
+
+git init (na pasta desejada, cria o repositório)
+
+
+git add -A
+git status
+git commit -m "adicionando" ou git commit -am "adicionei algo"
+
+
+
+git reset -soft idDoCommit (volta preparado para comitar)
+git reset -mixed idDoCommit (volta precisando add)
+git reset -hard idDoCommit (volta tudo)
+
+git branch teste (cria novo branch)
+git branch (marcado com * é o atual)
+git checkout teste (troca de branch)
+
+git diff (antes de commitar, mostra diferença entre os arquivos)
+git diff --name-only (mostra quais arquivos tiveram alteração) 
+git diff arquivo.css (mostra alterações somente no arquivo)
+git chekout HEAD -- arquivo.css (volta somente um arquivo do branch atual, desfaz as alterações no arquivo) 
+
+git push origin main (envia do seu repositório local (em main) para o repositório github)
+
+git pull origin main (quando a atualização for feita no git hub) (depois deve dar um git add -A e um commit)
+
+git revert --no-edit +codigoCommit (desfaz edições em um commit) 
+
+git push origin :teste (remove o branch teste do repositório externo)
+
+git remote -v (conferir qual o nome do servidor remoto para saber onde dar um push)
+
+Clonar projeto:
+cria pasta www, entra na pasta:
+git clone + (endereço do git que quer clonar)
+
+entrar como contribuidor:
+vai no projeto e clica em fork (cria uma ramificação para você).
+
