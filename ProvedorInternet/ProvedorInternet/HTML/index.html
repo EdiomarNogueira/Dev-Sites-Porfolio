@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="robots" content="index, follow">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style-principal.css">
+    <link rel="stylesheet" href="../CSS/style-slide-home.css">
+
+
+
+    <link rel="shortcut icon" href="../IMG/Navbar e Rodape/favicon.ico" />
+    <title>Quality-Internet</title>
 </head>
 <body>
+
+    <header class="header">
+        <div class="header-button" onclick="renderVerticalMenu()">☰</div>
+        <div class="menu-flutuante">
+            <div class="menu-logo">
+                <a href="../HTML/index.html" class="ui-link ui-widget">
+                    <img id="top-logo" src="../IMG/Navbar e Rodape/icon-qti-logo.png.png" alt="Logo" />
+                </a>
+            </div>
+            <ul >
+                
+                <li>
+                    <a href="../HTML/index.html" class="ui-link ui-widget selected" title="Bem Vindo">Bem Vindo</a>
+                </li>
+                <li>
+                    <a href="../HTML/empresa.html" class="ui-link ui-widget" title="Qualityti-Internet">Empresa</a>
+                </li>
+                <li>
+                    <a href="#soucliente" class="ui-link ui-widget" title="Sou cliente">Sou cliente</a>
+                </li>
+                <li>
+                    <a href="#faleconosco" class="ui-link ui-widget" title="Fale Conosco">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="ui-link ui-widget" title="Sobre">Sobre</a>
+                </li>
+            </ul>
+        </div>
+       
+    </header>
+
+    <main class="main">
+        <section class="slider">
+
+            <div class="controle-slide">
+                <div class="anterior" onclick="anterior()"> </div>
+                <div class="proximo" onclick="proximo()">  </div>
+            </div>
+
+            <ul>
+                <li>
+                    <picture class="banner1" id="banner1">
+                        <div class="texto-slide01-img01">
+                            <h1>BEM VINDO À <br><strong>QUALITY-TI</strong></h1>
+                            <h2>Sua melhor <strong>EXPERIÊNCIA</strong> em <strong>CONECTIVIDADE</strong></h2>
+                        </div>
+                        <source media="(min-width: 900px)" srcset="../IMG/BemVindo/banner_001-desktop.png"></source>
+                        <source media="(min-width: 500px)" srcset="../IMG/BemVindo/banner_001-tablet.png"></source>
+                        <img alt="Homem utilizando celular sobre o símbolo da Qualty-TI" src="../IMG/BemVindo/banner_001-mobile.png" />
+                    </picture>
+                </li>
+                <li>
+                    <picture class="banner2" id="banner2">
+                        <div class="texto-slide01-img02">
+                            <h2><strong>CONECTE-SE</strong> às <br>
+                            <h2>suas<strong> SÉRIES</strong> do seu<br></h2>
+                            <h2><strong>MELHOR </strong> jeito!</h2>                        
+                        </div>
+
+                        <source media="(min-width: 900px)" srcset="../IMG/BemVindo/banner_002-desktop.png">
+                        </source>
+                        <source media="(min-width: 500px)" srcset="../IMG/BemVindo/banner_002-tablet.png">
+                        </source>
+                        <img alt="Homem utilizando celular sobre o símbolo da Qualty-TI" src="../IMG/BemVindo/banner_002-mobile.png" />
+                    </picture>
+                </li>
+                <!--<li>
+                    <picture class="qti-banner3" id="qti-banner3">
+                        <div class="texto-slide01-img03">
+                            <h2><strong>CONECTE-SE</strong> às <br>
+                            <h2>suas<strong> SÉRIES</strong> do seu<br></h2>
+                            <h2><strong>MELHOR </strong> jeito!</h2>                        
+                        </div>
+
+                        <source media="(min-width: 900px)" srcset="../IMG/BemVindo/banner_003-desktop.png">
+                        </source>
+                        <source media="(min-width: 500px)" srcset="../IMG/BemVindo/banner_003-tablet.png">
+                        </source>
+                        <img alt="Mulher comendo pipoca assistindo filme" src="../IMG/BemVindo/banner_003-mobile.png" />
+                    </picture>
+                </li> -->
+            </ul>
+        </section>
+
+
+
+        
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script type="text/javascript" src="../JS/slide.js"></script>
+
     
 </body>
 </html>
