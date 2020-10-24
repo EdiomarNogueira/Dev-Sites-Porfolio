@@ -1,0 +1,45 @@
+
+
+.canexoes-banner01 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end; 
+}
+
+
+.conexoes {
+    height: 40vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(202, 202, 202);   
+    border-top: 10px solid #154585;
+
+}
+
+.conexoes-texto {
+    height: 40vw;
+    width: 55vw;
+    border:2px solid blue;
+}
+
+.conexoes-imagem {
+    display: flex;
+    height: 40vw;
+    width: 55vw;
+    border:2px solid blue;  
+    align-items: flex-end;
+  
+
+}
+
+.conexoes-imagem > img{
+    height: 30vw;
+    width: 45vw;
+    border:2px solid blue;  
+
+}

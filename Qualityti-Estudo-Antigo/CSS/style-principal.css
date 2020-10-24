@@ -1,0 +1,237 @@
+/* ***************Zerando definições padrão**************/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+
+html, body {
+    box-sizing: border-box;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/****************************************************************/
+/*****************INICIO DA CONFIGURAÇÃO DE HEADER**************/
+
+/*****************Barra superior**************/
+
+
+.barra-redes-sociais {
+    background:#154585 ;
+    box-sizing: content-box;
+    padding: 1vh;
+}
+
+.barra-inferior-contato {
+    display: flex;
+    justify-content: center;
+
+}
+
+.barra-inferior-contato > h5 {
+    font-weight: 400;
+}
+
+.barra-redes-sociais > div > h5 {
+    margin-top: 0.3em;
+    font-size: 0.7em;
+    color: #fff;
+    padding-left: 0.5vw;
+    padding-right: 2vw;
+}
+
+.barra-redes-sociais > img {
+    padding-left: 0.5vw;
+    padding-right: 0vw;
+}
+
+/*****************Menu**************/
+
+.qti-header-logo > a > img {
+    height: 9vh;
+    padding-bottom: 1vh;
+    margin: 0vh 2vw 0vh 5vw; 
+}
+
+.menu-topo {
+    margin-right: 5vw;
+    margin-left: 0vw;  
+}
+
+.menu-topo > ul {
+    display: flex;   
+    vertical-align: top;
+    align-items: center;
+}
+
+.menu-topo > ul > li > a{
+    display: block;
+    padding: 4vh 1vw ;
+    color: #154585;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.menu-topo > ul > li > a:hover{
+    background-color: #3779cf;
+    transition: all 0.5s;
+}
+
+.menu-topo > ul > li > a:hover{
+    background-color: #1546853a;
+    box-shadow: 5px 0px 0px rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all 0.5s;
+}
+
+.menu-topo > ul > li > a.selected {
+    background-color: #154585;
+    box-shadow: 5px 0px 0px rgba(0, 0, 0, 0.6);
+    color: white;
+    transition: all 0.3s;
+}
+
+.qti-header-button {
+    float:right;
+    color:#eee;
+    background-color: rgb(85, 85, 85);
+    border: solid 1px #777;
+    border-radius: 1vh;
+    margin: 10px 40px;
+    padding: 1vh 2vw;
+}
+ 
+
+.qti-main {
+    height: 100%;
+    width: 100%;
+}
+
+.qti-main {
+    justify-self: first baseline;
+    background: #3261a8;
+}
+
+
+footer {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+   
+}
+
+.qti-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    height: auto;
+    width: auto;
+}
+
+
+.valores-empresa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70%;
+    background: radial-gradient(circle, #DFDFDF, #FFFFFF);
+    border-top: 10px solid #154585;
+    border-bottom: 10px solid #154585;
+}
+
+.valores-empresa > p{
+    color: #5B5B5F;
+
+}
+
+.valores-empresa > div > h1 {
+    font-size: 4vw;
+    margin-block-end: 0.5em;
+    text-align: center;
+    color: rgba(38, 151, 253, 0.5);
+}
+.texto-blur {
+    font-size: 8vw;
+    margin-block-start: 10vh;
+    color: rgba(38, 151, 253, 0.2);
+    filter: blur(4px);
+}
+
+.valores-empresa > p {
+    margin-bottom:10vw;
+    padding: 2vh;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+
+@media (min-width:0px) and (max-width:740px) {
+    .menu-topo{
+        display: none;
+    }
+
+    .qti-header-menu {
+        padding-top: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(202, 202, 202);
+        border-bottom: solid 1vh #154585; 
+        /*position: sticky;
+        top: 0;*/  /*Fixar o menu superior na parte superior*/
+    }
+
+}
+
+@media (min-width:740px) and (max-width:1099px) {
+
+    .qti-header-menu {
+        padding-top: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(202, 202, 202);
+        border-bottom: solid 1vh #154585; 
+        flex-direction: column;
+    }
+    
+    .qti-header-button {
+        display: none;
+    }
+}
+
+@media (min-width:1099px) {
+    .qti-header-menu {
+        padding-top: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(202, 202, 202);
+        border-bottom: solid 1vh #154585; 
+        /*position: sticky;
+        top: 0;*/  /*Fixar o menu superior na parte superior*/
+    }
+
+    .qti-header-button {
+        display: none;
+    }
+
+
+
+}
