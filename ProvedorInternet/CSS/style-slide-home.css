@@ -2,11 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+
 }
 
 .slider > ul > li > picture > img{
-    width: 100%;
+    width: 100vw;
+
     height: 100%;
+
 }
 
 .banner1 { 
@@ -30,6 +34,8 @@
     justify-content: center;
     flex-direction: column;
     height: 80vh;
+    width: 100vw;
+
 }
 
 /*
